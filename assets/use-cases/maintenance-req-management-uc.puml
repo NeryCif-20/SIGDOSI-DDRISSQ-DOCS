@@ -1,0 +1,27 @@
+@startuml maintenance-req-management-uc
+
+skinparam packageStyle rectangle
+
+actor/ :Personal Administrativo de los Establecimientos de Salud: as PAES
+
+rectangle "Gestión de Solicitudes de Mantenimiento" {
+
+    actor/ :Jefe del Departamento de Planificación: as JDP
+
+    usecase/ (Registrar\nSolicitud de Mantenimiento) as RSM #ffe5f3
+    usecase/ (Actualizar\nSolicitud de Mantenimiento) as ASM #ffe5f3
+    usecase/ (Consultar\nSolicitud de Mantenimiento) as CSM #ffe5f3
+    usecase/ (Cancelar\nSolicitud de Mantenimiento) as ACSM
+
+    JDP -left- RSM
+    JDP -right- ASM
+
+    ASM ..> CSM : <<include>>
+
+    ACSM .left.> ASM : <<extend>>
+
+    PAES -- RSM
+
+}
+
+@enduml

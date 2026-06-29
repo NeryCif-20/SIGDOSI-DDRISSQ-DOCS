@@ -1,0 +1,27 @@
+@startuml technical-doc-management-uc
+
+skinparam packageStyle rectangle
+
+rectangle "Gestión de Documentación Técnica" {
+
+    actor/ :Jefe del Departamento de Planificación: as JDP
+    actor/ :Encargado de la Unidad de Gestión de Infraestructura: as EUGI
+
+    usecase/ (Registrar\nDocumentación Técnica\nde un\nEstablecimiento) as RDT #ffe5f3
+    usecase/ (Actualizar\nInformación o Versiones\nde la\nDocumentación) as AVD #ffe5f3
+    usecase/ (Consultar\nDocumentación Técnica\nexistente) as CDE #ffe5f3
+    usecase/ (Clasificar\nla Documentación según\n categoría) as CD
+
+    JDP -up- RDT
+    JDP -up- AVD
+
+    EUGI -- RDT
+    EUGI -- AVD
+
+    AVD ..> CDE : <<include>>
+
+    RDT ..> CD : <<include>>
+
+}
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml facility-management-uc
+
+skinparam packageStyle rectangle
+
+rectangle "Gestión de Establecimientos" {
+
+    actor/ :Jefe del Departamento de Planificación: as JDP
+
+    usecase/ (Registrar\nEstablecimiento) as RE #ffe5f3
+    usecase/ (Actualizar\nEstablecimiento) as AE #ffe5f3
+    usecase/ (Consultar\nEstablecimiento) as CE #ffe5f3
+    usecase/ (Dar de Baja\nal\nEstablecimiento) as DBE
+
+    JDP -right- RE
+    JDP -left- AE
+
+    AE ..> CE : <<include>>
+
+    DBE .right.> AE : <<extend>>
+
+}
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml user-management-uc
+
+skinparam packageStyle rectangle
+
+rectangle "Gestión de Usuarios" {
+
+    actor/ :Jefe del Departamento de Planificación: as JDP
+
+    usecase/ (Registrar\n Usuario) as RU #ffe5f3
+    usecase/ (Actualizar\n Usuario) as AU #ffe5f3
+    usecase/ (Consultar\n Usuario) as CU #ffe5f3
+    usecase/ (Dar de baja\nal Usuario) as DBU
+
+    JDP -- RU
+    JDP -right- AU
+
+    AU .right.> CU : <<include>>
+    
+    DBU .up.> AU : <<extend>>
+
+}
+
+@enduml

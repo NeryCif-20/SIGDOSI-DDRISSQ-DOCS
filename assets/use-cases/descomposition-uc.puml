@@ -1,0 +1,28 @@
+@startuml descomposition-uc
+
+skinparam packageStyle rectangle
+
+actor/ :Personal Administrativo de los Establecimientos de Salud: as PAES
+
+rectangle "Departamento de Planificación - DDRISSQ" {
+
+    actor/ :Jefe del Departamento de Planificación: as JDP
+    actor/ :Encargado de la Unidad de Gestión de Infraestructura: as EUGI
+
+    usecase/ (Gestionar\nEstablecimientos) as GE
+    usecase/ (Gestionar\nDocumentación Técnica) as GDT
+    usecase/ (Gestionar\nSolicitudes de Mantenimiento) as GSM
+    usecase/ (Gestionar\nUsuarios) as GU
+
+    JDP -- GE
+    JDP -up- GDT
+    JDP -right- GSM
+    JDP -left- GU
+
+    EUGI -- GDT
+
+    PAES -left- GSM
+
+}
+
+@enduml

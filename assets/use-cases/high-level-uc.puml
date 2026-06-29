@@ -1,0 +1,13 @@
+@startuml high-level-uc
+
+actor/ :Jefe del Departamento de Planificación: as JDP
+actor/ :Encargado de la Unidad de Gestión de Infraestructura: as EUGI
+actor/ :Personal Administrativo de los Establecimientos de Salud: as PAES
+
+usecase/ (Automatizar la Gestión de la Infraestructura) as UC
+
+JDP -- UC
+EUGI -- UC
+PAES -up- UC
+
+@enduml
