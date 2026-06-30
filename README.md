@@ -4,6 +4,7 @@
 1. [Core del Negocio](#1-core-del-negocio)
 2. [Casos de Uso Expandidos](#2-casos-de-uso-expandidos)
 3. [Drivers Arquitectonicos](#3-drivers-arquitectonicos)
+3. [Matrices de Trazabilidad](#4-matrices-de-trazabilidad)
 
 ## 1. Core del Negocio
 
@@ -95,25 +96,25 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 * **RF06 - Registrar documentación técnica**: El sistema deberá permitir registrar documentación técnica asociada a un establecimiento de salud.
 * **RF07 - Consultar documentación técnica**: El sistema deberá permitir consultar la documentación técnica almacenada.
 * **RF08 - Actualizar documentación técnica**: El sistema deberá permitir modificar la información de la documentación técnica registrada.
-* **RF08 - Historial de modificaciones**: El sistema deberá registrar el historial de cambios realizados sobre la documentación técnica.
+* **RF09 - Historial de modificaciones**: El sistema deberá registrar el historial de cambios realizados sobre la documentación técnica.
 
 #### Gestión de Solicitudes de Mantenimiento
-* **RF09 - Registrar solicitud**: El sistema deberá permitir registrar solicitudes de mantenimiento.
-* **RF10 - Consultar solicitudes**: El sistema deberá permitir consultar las solicitudes registradas.
-* **RF11 - Actualizar solicitud**: El sistema deberá permitir modificar la información de una solicitud de mantenimiento.
-* **RF12 - Registrar observaciones**: El sistema deberá permitir registrar observaciones relacionadas con una solicitud de mantenimiento.*
-* **RF13 - Cancelar solicitud**: El sistema deberá permitir cancelar una solicitud de mantenimiento.
-* **RF14 - Historial de solicitudes**: El sistema deberá registrar el historial de cambios realizados sobre las solicitudes de mantenimiento.
+* **RF10 - Registrar solicitud**: El sistema deberá permitir registrar solicitudes de mantenimiento.
+* **RF11 - Consultar solicitud**: El sistema deberá permitir consultar las solicitudes registradas.
+* **RF12 - Actualizar solicitud**: El sistema deberá permitir modificar la información de una solicitud de mantenimiento.
+* **RF13 - Registrar observaciones**: El sistema deberá permitir registrar observaciones relacionadas con una solicitud de mantenimiento.*
+* **RF14 - Cancelar solicitud**: El sistema deberá permitir cancelar una solicitud de mantenimiento.
+* **RF15 - Historial de solicitudes**: El sistema deberá registrar el historial de cambios realizados sobre las solicitudes de mantenimiento.
 
 #### Gestión de Usuarios
-* **RF15 - Registrar usuario**: El sistema deberá permitir registrar nuevos usuarios.
-* **RF16 - Consultar usuarios**: El sistema deberá permitir consultar la información de los usuarios registrados.
-* **RF17 - Actualizar usuario**: El sistema deberá permitir modificar la información de un usuario.
-* **RF18 - Activar o desactivar usuario**: El sistema deberá permitir cambiar el estado de una cuenta de usuario.
+* **RF16 - Registrar usuario**: El sistema deberá permitir registrar nuevos usuarios.
+* **RF17 - Consultar usuario**: El sistema deberá permitir consultar la información de los usuarios registrados.
+* **RF18 - Actualizar usuario**: El sistema deberá permitir modificar la información de un usuario.
+* **RF19 - Activar o desactivar usuario**: El sistema deberá permitir cambiar el estado de una cuenta de usuario.
 
 #### Generales
-* **RF19 - Adjuntar archivos**: El sistema deberá permitir adjuntar archivos digitales a la documentación técnica, información de un establecimiento y/o solicitudes de mantenimiento de los mismos.
-* **RF20 - Descargar archivos**: El sistema deberá permitir descargar los archivos asociados a la documentación técnica y/o a las solicitudes de mantenimiento.
+* **RF20 - Adjuntar archivos**: El sistema deberá permitir adjuntar archivos digitales a la documentación técnica, información de un establecimiento y/o solicitudes de mantenimiento de los mismos.
+* **RF21 - Descargar archivos**: El sistema deberá permitir descargar los archivos asociados a la documentación técnica y/o a las solicitudes de mantenimiento.
 
 ### 2. Requisitos No Funcionales
 
@@ -169,3 +170,44 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 * **RST05 - Control de versiones**: El código fuente deberá administrarse utilizando Git como sistema de control de versiones.
 * **RST06 - Metodología de desarrollo**: El desarrollo del sistema deberá seguir los lineamientos de la metodología ágil Scrum.
 * **RST07 - Desarrollo del sistema**: El sistema debe desarrollarse durante seis mes, según cronograma aprobado.
+
+## 4. Matrices de Trazabilidad
+
+### Stakeholders vs Requisitos
+|**Stakeholders\Requisitos**|**RF01<br>Registrar Establecimiento**|**RF02<br>Consultar Establecimientos**|**RF03<br>Actualizar Establecimiento**|**RF04<br>Inhabilitar Establecimiento**|**RF05<br>Asociar Ubicación Geográfica**|**RF06<br>Registrar Documentación Técnica**|**RF07<br>Consultar Documentación Técnica**|**RF08<br>Actualizar Documentación Técnica**|**RF09<br>Historial de Modificaciones**|**RF10<br>Registrar Solicitud**|**RF11<br>Consultar Solicitud**|**RF12<br>Actualizar Solicitud**|**RF13<br>Registrar Observaciones**|**RF14<br>Cancelar Solicitud**|**RF15<br>Historial de Solicitudes**|**RF16<br>Registrar Usuario**|**RF17<br>Consultar Usuario**|**RF18<br>Actualizar Usuario**|**RF19<br>Activar o Desactivar usuario**|**RF20<br>Adjuntar Archivos**|**RF21<br>Descargar Archivos**|
+|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|**Jefe del Departamento de Planificación**|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|
+|**Encargado de la Unidad de Gestión de Infraestructura**| | | | | |X|X|X|X| | | | | | | | | | | | |
+|**Personal Administrativo de los Establecimientos de Salud**| | | | | | | | | |X| | | | | | | | | | | |
+
+### Stakeholders vs CDU
+|**Stakeholders \ CDU**|**CDU100<br>Gestión de Establecimientos**|**CDU200<br>Gestión de Documentación Técnica**|**CD300<br>Gestión de Solicitudes de Mantenimiento**|**CDU400<br>Gestión de Usuarios**|
+|-|:-:|:-:|:-:|:-:|
+|**Jefe del Departamento de Planificación**|X|X|X|X|
+|**Encargado de la Unidad de Gestión de Infraestructura**| |X| | |
+|**Personal Administrativo de los Establecimientos de Salud**| | |X| |
+
+### Requisitos vs CDU
+|**Requisitos \ CDU**|**CDU100<br>Gestión de Establecimientos**|**CDU200<br>Gestión de Documentación Técnica**|**CD300<br>Gestión de Solicitudes de Mantenimiento**|**CDU400<br>Gestión de Usuarios**|
+|-|:-:|:-:|:-:|:-:|
+|**RF01<br>Registrar Establecimiento**|X| | | |
+|**RF02<br>Consultar Establecimientos**|X| | | |
+|**RF03<br>Actualizar Establecimiento**|X| | | |
+|**RF04<br>Inhabilitar Establecimiento**|X| | | |
+|**RF05<br>Asociar Ubicación Geográfica**|X| | | |
+|**RF06<br>Registrar Documentación Técnica**| |X| | |
+|**RF07<br>Consultar Documentación Técnica**| |X| | |
+|**RF08<br>Actualizar Documentación Técnica**| |X| | |
+|**RF09<br>Historial de Modificaciones**| |X| | |
+|**RF10<br>Registrar Solicitud**| | |X| |
+|**RF11<br>Consultar Solicitud**| | |X| |
+|**RF12<br>Actualizar Solicitud**| | |X| |
+|**RF13<br>Registrar Observaciones**| | |X| |
+|**RF14<br>Cancelar Solicitud**| | |X| |
+|**RF15<br>Historial de Solicitudes**| | |X| |
+|**RF16<br>Registrar Usuario**| | | |X|
+|**RF17<br>Consultar Usuario**| | | |X|
+|**RF18<br>Actualizar Usuario**| | | |X|
+|**RF19<br>Activar o Desactivar usuario**| | | |X|
+|**RF20<br>Adjuntar Archivos**| |X|X| |
+|**RF21<br>Descargar Archivos**| |X|X| |
