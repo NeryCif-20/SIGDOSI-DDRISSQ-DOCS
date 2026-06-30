@@ -81,3 +81,91 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |**Prioridad**|Alta.|
 
 ## 3. Drivers Arquitectonicos
+
+### 1. Requisitos Funcionales
+
+#### Gestión de Establecimientos
+* **RF01 - Registrar establecimiento**: El sistema deberá permitir registrar nuevos establecimientos de salud.
+* **RF02 - Consultar establecimientos**: El sistema deberá permitir consultar la información de los establecimientos registrados.
+* **RF03 - Actualizar establecimiento**: El sistema deberá permitir modificar la información de un establecimiento existente.
+* **RF04 - Inhabilitar establecimiento**: El sistema deberá permitir dar de baja a un establecimiento existente.
+* **RF05 - Asociar ubicación geográfica**: El sistema deberá permitir asociar la ubicación geográfica a un establecimiento.
+
+#### Gestión de Documentación Técnica
+* **RF06 - Registrar documentación técnica**: El sistema deberá permitir registrar documentación técnica asociada a un establecimiento de salud.
+* **RF07 - Consultar documentación técnica**: El sistema deberá permitir consultar la documentación técnica almacenada.
+* **RF08 - Actualizar documentación técnica**: El sistema deberá permitir modificar la información de la documentación técnica registrada.
+* **RF08 - Historial de modificaciones**: El sistema deberá registrar el historial de cambios realizados sobre la documentación técnica.
+
+#### Gestión de Solicitudes de Mantenimiento
+* **RF09 - Registrar solicitud**: El sistema deberá permitir registrar solicitudes de mantenimiento.
+* **RF10 - Consultar solicitudes**: El sistema deberá permitir consultar las solicitudes registradas.
+* **RF11 - Actualizar solicitud**: El sistema deberá permitir modificar la información de una solicitud de mantenimiento.
+* **RF12 - Registrar observaciones**: El sistema deberá permitir registrar observaciones relacionadas con una solicitud de mantenimiento.*
+* **RF13 - Cancelar solicitud**: El sistema deberá permitir cancelar una solicitud de mantenimiento.
+* **RF14 - Historial de solicitudes**: El sistema deberá registrar el historial de cambios realizados sobre las solicitudes de mantenimiento.
+
+#### Gestión de Usuarios
+* **RF15 - Registrar usuario**: El sistema deberá permitir registrar nuevos usuarios.
+* **RF16 - Consultar usuarios**: El sistema deberá permitir consultar la información de los usuarios registrados.
+* **RF17 - Actualizar usuario**: El sistema deberá permitir modificar la información de un usuario.
+* **RF18 - Activar o desactivar usuario**: El sistema deberá permitir cambiar el estado de una cuenta de usuario.
+
+#### Generales
+* **RF19 - Adjuntar archivos**: El sistema deberá permitir adjuntar archivos digitales a la documentación técnica, información de un establecimiento y/o solicitudes de mantenimiento de los mismos.
+* **RF20 - Descargar archivos**: El sistema deberá permitir descargar los archivos asociados a la documentación técnica y/o a las solicitudes de mantenimiento.
+
+### 2. Requisitos No Funcionales
+
+#### Adecuación Funcional
+* **RNF01 - Cobertura funcional**: El sistema deberá proporcionar todas las funcionalidades necesarias para la gestión de establecimientos de salud, documentación técnica, solicitudes de mantenimiento y usuarios.
+
+#### Eficiencia de Desempeño
+* **RNF02 - Tiempo de respuesta**: El sistema deberá responder a las solicitudes del usuario en un tiempo máximo de tres segundos bajo condiciones normales de operación.
+* **RNF03 - Uso eficiente de recursos**: El sistema deberá optimizar el consumo de memoria, procesamiento y almacenamiento durante su ejecución.
+
+#### Compatibilidad
+* **RNF04 - Compatibilidad con navegadores**: El sistema deberá funcionar correctamente en navegadores modernos independientemente del sistema operativo.
+* **RNF05 - Interoperabilidad**: El sistema deberá intercambiar información mediante servicios web REST utilizando formato JSON.
+
+#### Capacidad de Interacción
+* **RNF06 - Facilidad de uso**: La interfaz del sistema deberá ser intuitiva y de fácil aprendizaje para los usuarios.
+* **RNF07 - Consistencia de la interfaz**: El sistema deberá mantener un diseño uniforme en todas las pantallas y formularios.
+* **RNF08 - Retroalimentación al usuario**: El sistema deberá mostrar mensajes claros de confirmación, advertencia y error durante las operaciones realizadas.
+* **RNF09 - Validación de datos**: El sistema deberá validar la información ingresada antes de procesarla, indicando los campos que contengan errores.
+
+#### Fiabilidad
+* **RNF10 - Disponibilidad**: El sistema deberá estar disponible durante el horario laboral establecido por la DDRISSQ.
+* **RNF11 - Integridad de la información**: El sistema deberá garantizar la integridad de los datos almacenados evitando pérdidas o inconsistencias.
+
+#### Seguridad
+* **RNF12 - Autenticación**: El sistema deberá permitir el acceso únicamente a usuarios autenticados.
+* **RNF13 - Autorización**: El sistema deberá restringir el acceso a las funcionalidades según el rol asignado al usuario.
+* **RNF14 - Protección de credenciales**: Las contraseñas de los usuarios deberán almacenarse utilizando algoritmos hash seguros.
+* **RNF15 - Gestión de sesiones**: El sistema deberá finalizar automáticamente la sesión tras un período de inactividad configurable.
+
+#### Mantenibilidad
+* **RNF16 - Arquitectura modular**: El sistema deberá desarrollarse utilizando una arquitectura modular que facilite su mantenimiento.
+* **RNF17 - Calidad del código**: El código fuente deberá seguir estándares de codificación y buenas prácticas de desarrollo.
+
+#### Flexibilidad
+* **RNF17 - Adaptación a cambios**: El sistema deberá facilitar la adaptación a nuevos procesos administrativos de la institución.
+
+#### Protección
+* **RNF18 - Restricción operativa**: El sistema deberá impedir la ejecución de operaciones que puedan comprometer la integridad de la información, considerando el estado de los registros y los permisos del usuario.
+* **RNF19 - Protección contra pérdida de información**: El sistema deberá evitar la pérdida de información ante fallos inesperados mediante mecanismos de persistencia adecuados.
+
+### 3. Requisitos de Restricción
+
+#### Técnicos
+* **RST01 - Arquitectura del sistema**: El sistema deberá implementarse siguiendo una arquitectura en capas que separe la presentación, la lógica de negocio y el acceso a datos, asimismo seguir una arquitectura cliente-servidor para su comunicación.
+* **RST02 - Aplicacion Web**: La solución debe estar preparada para ser desplegada en cualquier entorno.
+* **RST03 - Conectividad**: El sistema requerirá conexión a la red institucional o a Internet para su funcionamiento.
+
+#### Operacionales
+* **RST04 - Eliminación de registros**: No se permite eliminación física de registros por normativas de la institución. Solo debe aplicarse baja lógica o estado "inactivo".
+
+#### Gestión
+* **RST05 - Control de versiones**: El código fuente deberá administrarse utilizando Git como sistema de control de versiones.
+* **RST06 - Metodología de desarrollo**: El desarrollo del sistema deberá seguir los lineamientos de la metodología ágil Scrum.
+* **RST07 - Desarrollo del sistema**: El sistema debe desarrollarse durante seis mes, según cronograma aprobado.
