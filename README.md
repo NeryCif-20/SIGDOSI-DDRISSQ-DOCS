@@ -176,21 +176,21 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 
 ### Stakeholders vs Requisitos
 |**Stakeholders \ Requisitos**|**RF01<br>Registrar Establecimiento**|**RF02<br>Consultar Establecimientos**|**RF03<br>Actualizar Establecimiento**|**RF04<br>Inhabilitar Establecimiento**|**RF05<br>Asociar Ubicación Geográfica**|**RF06<br>Registrar Documentación Técnica**|**RF07<br>Consultar Documentación Técnica**|**RF08<br>Actualizar Documentación Técnica**|**RF09<br>Historial de Modificaciones**|**RF10<br>Registrar Solicitud**|**RF11<br>Consultar Solicitud**|**RF12<br>Actualizar Solicitud**|**RF13<br>Registrar Observaciones**|**RF14<br>Cancelar Solicitud**|**RF15<br>Historial de Solicitudes**|**RF16<br>Registrar Usuario**|**RF17<br>Consultar Usuario**|**RF18<br>Actualizar Usuario**|**RF19<br>Activar o Desactivar usuario**|**RF20<br>Adjuntar Archivos**|**RF21<br>Descargar Archivos**|
-|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|:-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |**Jefe del Departamento de Planificación**|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|
 |**Encargado de la Unidad de Gestión de Infraestructura**| | | | | |X|X|X|X| | | | | | | | | | | | |
 |**Personal Administrativo de los Establecimientos de Salud**| | | | | | | | | |X| | | | | | | | | | | |
 
 ### Stakeholders vs CDU
 |**Stakeholders \ CDU**|**CDU100<br>Gestión de Establecimientos**|**CDU200<br>Gestión de Documentación Técnica**|**CD300<br>Gestión de Solicitudes de Mantenimiento**|**CDU400<br>Gestión de Usuarios**|
-|-|:-:|:-:|:-:|:-:|
+|:-|:-:|:-:|:-:|:-:|
 |**Jefe del Departamento de Planificación**|X|X|X|X|
 |**Encargado de la Unidad de Gestión de Infraestructura**| |X| | |
 |**Personal Administrativo de los Establecimientos de Salud**| | |X| |
 
 ### Requisitos vs CDU
 |**Requisitos \ CDU**|**CDU100<br>Gestión de Establecimientos**|**CDU200<br>Gestión de Documentación Técnica**|**CD300<br>Gestión de Solicitudes de Mantenimiento**|**CDU400<br>Gestión de Usuarios**|
-|-|:-:|:-:|:-:|:-:|
+|:-|:-:|:-:|:-:|:-:|
 |**RF01<br>Registrar Establecimiento**|X| | | |
 |**RF02<br>Consultar Establecimientos**|X| | | |
 |**RF03<br>Actualizar Establecimiento**|X| | | |
@@ -216,21 +216,21 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 ## 5. Historias de Usuario
 
 |**Historia de Usuario**|HU-01|
-|-|-|
+|:-|:-|
 |Titulo|Iniciar Sesión|
 |Descripción|**Como** usuario del sistema<br>**Quiero** iniciar sesión utilizando mis credenciales<br>**Para** acceder únicamente a las funcionalidades autorizadas según mi rol.|
 |Criterios de Aceptación|- El usuario deberá ingresar su nombre de usuario y contraseña.<br>- El sistema validará las credenciales.<br>- Si son válidas, permitirá el acceso al sistema.<br>- Si son inválidas, mostrará un mensaje de error.|
 |Prioridad|Alta|
 
 |**Historia de Usuario**|HU-02|
-|-|-|
+|:-|:-|
 |Titulo|Cerrar Sesión|
 |Historia|**Como** usuario autenticado<br>**Quiero** cerrar mi sesión<br>**Para** proteger mi información cuando termine de utilizar el sistema.|
 |Criterios de Aceptación|- El usuario podrá cerrar sesión desde cualquier pantalla.<br>- El sistema invalidará la sesión activa.<br>- El sistema redirigirá al formulario de inicio de sesión.|
 |Prioridad|Media|
 
 |**Historia de Usuario**|HU-03|
-|-|-|
+|:-|:-|
 |Titulo|Registrar Establecimiento|
 |Historia|**Como** Jefe del Departamento de Planificación<br>**Quiero** registrar un establecimiento de salud<br>**Para** administrar la información de la infraestructura de los establecimientos.|
 |Criterios de Aceptación|- El sistema solicitará toda la información obligatoria.<br>- Validará que el establecimiento no exista previamente.<br>- Almacenará la información correctamente.<br>- Mostrará un mensaje de confirmación.|
@@ -238,7 +238,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF01|
 
 |**Historia de Usuario**|HU-04|
-|-|-|
+|:-|:-|
 |Titulo|Consultar Establecimiento|
 |Historia|**Como** Jefe del Departamento de Planificación<br>**Quiero** consultar los establecimientos registrados<br>**Para** visualizar su información.|
 |Criterios de Aceptación|- El sistema mostrará el listado de establecimientos.<br>- Permitirá búsquedas.<br>- Permitirá visualizar el detalle de cada establecimiento.|
@@ -246,7 +246,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF02|
 
 |**Historia de Usuario**|HU-05|
-|-|-|
+|:-|:-|
 |Titulo|Actualizar Establecimiento|
 |Historia|**Como** Jefe del Departamento de Planificación<br>**Quiero** modificar la información de un establecimiento<br>**Para** mantener actualizados sus datos.|
 |Criterios de Aceptación|- El sistema mostrará la información actual.<br>- Permitirá modificar los campos autorizados.<br>- Guardará los cambios.|
@@ -254,7 +254,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF03, RF04|
 
 |**Historia de Usuario**|HU-06|
-|-|-|
+|:-|:-|
 |Titulo|Asociar Ubicación Geográfica|
 |Historia|**Como** Jefe del Departamento de Planificación<br>**Quiero** asociar la ubicación geográfica de un establecimiento<br>**Para** poder visualizarla como parte de su información general.|
 |Criterios de Aceptación|- El sistema permitira asociar las coordenadas de un establecimiento.<br>- Permitirá modificar una ubicación asociada.<br>- Guardará los cambios.|
@@ -262,7 +262,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF05|
 
 |**Historia de Usuario**|HU-07|
-|-|-|
+|:-|:-|
 |Titulo|Registrar Documentación Técnica|
 |Historia|**Como** Jefe del Departamento de Planificación y/o Encargado de la Unidad de Gestión de Infraestructura<br>**Quiero** registrar documentación técnica<br>**Para** mantener organizada la información técnica de cada establecimiento.|
 |Criterios de Aceptación|- Seleccionar establecimiento.<br>- Registrar información del documento.<br>- Adjuntar archivos.<br>- Guardar correctamente.|
@@ -270,7 +270,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF06, RF20|
 
 |**Historia de Usuario**|HU-08|
-|-|-|
+|:-|:-|
 |Titulo|Consultar Documentación Técnica|
 |Historia|**Como** Jefe del Departamento de Planificación y/o Encargado de la Unidad de Gestión de Infraestructura<br>**Quiero** consultar la documentación técnica<br>**Para** acceder a la información registrada.|
 |Criterios de Aceptación|- Buscar documentos.<br>- Visualizar detalles.<br>- Descargar archivos adjuntos.|
@@ -278,7 +278,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF07, RF21|
 
 |**Historia de Usuario**|HU-09|
-|-|-|
+|:-|:-|
 |Titulo|Actualizar Documentación Técnica|
 |Historia|**Como** Jefe del Departamento de Planificación y/o Encargado de la Unidad de Gestión de Infraestructura<br>**Quiero** modificar la documentación técnica<br>**Para** mantener la información actualizada.|
 |Criterios de Aceptación|- Editar información.<br>- Actualizar archivos si es necesario.<br>- Guardar cambios.|
@@ -286,7 +286,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF08, RF09, RF20|
 
 |**Historia de Usuario**|HU-10|
-|-|-|
+|:-|:-|
 |Titulo|Registrar Solicitud|
 |Historia|**Como** Jefe del Departamento de Planificación<br>**Quiero** registrar una solicitud de mantenimiento<br>**Para** dar seguimiento a las necesidades de mantenimiento de los establecimientos.|
 |Criterios de Aceptación|- Seleccionar establecimiento.<br>- Registrar tipo de mantenimiento.<br>- Registrar descripción.<br>- Guardar solicitud.|
@@ -294,7 +294,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF10, RF20|
 
 |**Historia de Usuario**|HU-11|
-|-|-|
+|:-|:-|
 |Titulo|Consultar Solicitud|
 |Historia|**Como** Jefe del Departamento de Planificación<br>**Quiero** consultar las solicitudes registradas<br>**Para** conocer su estado y avance.|
 |Criterios de Aceptación|- Mostrar listado.<br>- Permitir filtros.<br>- Visualizar detalle.|
@@ -302,7 +302,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF11, RF21|
 
 |**Historia de Usuario**|HU-12|
-|-|-|
+|:-|:-|
 |Titulo|Actualizar Solicitud|
 |Historia|**Como** Jefe del Departamento de Planificación<br>**Quiero** modificar una solicitud<br>**Para** mantener su información actualizada.|
 |Criterios de Aceptación|- Editar información.<br>- Guardar cambios.<br>- Registrar historial.|
@@ -310,7 +310,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF12, RF20|
 
 |**Historia de Usuario**|HU-13|
-|-|-|
+|:-|:-|
 |Titulo|Cambiar Estado de la Solicitud|
 |Historia|**Como** Jefe del Departamento de Planificación<br>**Quiero** cambiar el estado de una solicitud<br>**Para** reflejar el avance del mantenimiento.|
 |Criterios de Aceptación|- Cambiar entre estados permitidos.<br>- Registrar fecha del cambio.<br>- Actualizar historial.|
@@ -318,7 +318,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF12, RF14, RF15|
 
 |**Historia de Usuario**|HU-14|
-|-|-|
+|:-|:-|
 |Titulo|Registrar Observaciones|
 |Historia|**Como** Jefe del Departamento de Planificación<br>**Quiero** registrar observaciones<br>**Para** documentar información adicional sobre la solicitud.|
 |Criterios de Aceptación|- Registrar comentarios.<br>- Asociarlos a la solicitud.<br>- Guardarlos correctamente.|
@@ -326,7 +326,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF13|
 
 |**Historia de Usuario**|HU-15|
-|-|-|
+|:-|:-|
 |Titulo|Registrar Usuario|
 |Historia|**Como** administrador del sistema<br>**Quiero** registrar usuarios<br>**Para** permitirles utilizar el sistema.|
 |Criterios de Aceptación|- Registrar información del usuario.<br>- Asignar un rol.<br>- Validar que no exista previamente.<br>- Guardar correctamente.|
@@ -334,7 +334,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF16|
 
 |**Historia de Usuario**|HU-16|
-|-|-|
+|:-|:-|
 |Titulo|Consultar Usuario|
 |Historia|**Como** administrador del sistema<br>**Quiero** consultar los usuarios registrados<br>**Para** administrar sus cuentas.|
 |Criterios de Aceptación|- Mostrar listado.<br>- Permitir búsqueda.<br>- Mostrar información detallada.|
@@ -342,7 +342,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF17|
 
 |**Historia de Usuario**|HU-17|
-|-|-|
+|:-|:-|
 |Titulo|Actualizar Usuario|
 |Historia|**Como** administrador del sistema<br>**Quiero** modificar la información de un usuario<br>**Para** mantener sus datos actualizados.|
 |- Criterios de Aceptación|Editar información.<br>- Cambiar rol cuando corresponda.<br>- Guardar cambios.|
@@ -350,7 +350,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Requisitos Relacionados|RF18|
 
 |**Historia de Usuario**|HU-18|
-|-|-|
+|:-|:-|
 |Titulo|Activar o Desactivar Usuario|
 |Historia|**Como** administrador del sistema<br>**Quiero** cambiar el estado de un usuario<br>**Para** controlar el acceso al sistema.|
 |- Criterios de Aceptación|- Cambiar estado.<br>- Confirmar operación.<br>- Registrar el cambio.|
