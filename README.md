@@ -349,7 +349,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |Prioridad|Alta|
 |Requisitos Relacionados|RF18|
 
-|**Historia de Usuario**|HU-17|
+|**Historia de Usuario**|HU-18|
 |-|-|
 |Titulo|Activar o Desactivar Usuario|
 |Historia|**Como** administrador del sistema<br>**Quiero** cambiar el estado de un usuario<br>**Para** controlar el acceso al sistema.|
