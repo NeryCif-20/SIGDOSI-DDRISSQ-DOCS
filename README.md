@@ -367,4 +367,6 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 
 ### Diseño Lógico
 
+![diseño-lógico](./assets/db/logic-design.png)
+
 ### Diseño Físico

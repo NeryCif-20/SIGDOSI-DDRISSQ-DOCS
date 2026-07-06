@@ -1,0 +1,171 @@
+Table permission {
+    id uuid [pk]
+    module varchar [not null]
+    name varchar [not null]
+    indexes {
+        (module, name) [unique]
+    }
+}
+
+Table role {
+    id uuid [pk]
+    name varchar [not null, unique]
+    description text
+}
+
+Table role_permission {
+    id uuid [pk]
+    permission_id uuid [not null, ref: > permission.id]
+    role_id uuid [not null, ref: > role.id]
+    indexes {
+        (permission_id, role_id) [unique]
+    }
+}
+
+Table user_account {
+    id uuid [pk]
+    role_id uuid [not null, ref: - role.id]
+    email varchar [not null, unique]
+    password_hash varchar [not null]
+    status varchar [not null]
+}
+
+Table user_profile {
+    id uuid [pk]
+    user_account_id uuid [not null, ref: - user_account.id]
+    dpi varchar [not null]
+    first_name varchar [not null]
+    last_name varchar [not null]
+    avatar varchar [not null, unique]
+    phone_number varchar [unique]
+}
+
+Table dms {
+    id uuid [pk]
+    name varchar [not null]
+}
+
+Table riss {
+    id uuid [pk]
+    dms_id uuid [not null, ref: > dms.id]
+    name varchar [not null]
+    type varchar [not null]
+}
+
+Table community {
+    id uuid [pk]
+    riss_id uuid [not null, ref: > riss.id]
+    name varchar [not null]
+    territory smallint [not null]
+    sector char [not null]
+    population bigint [not null]
+}
+
+Table building_element {
+    id uuid [pk]
+    name varchar [not null, unique]
+    has_building_material boolean [not null]
+}
+
+Table building_material {
+    id uuid [pk]
+    code varchar [not null, unique]
+    name varchar [not null]
+}
+
+Table property {
+    id uuid [pk]
+    total_land_area numeric [not null]
+    building_footprint numeric [not null]
+    available_expansion_area numeric [not null]
+    tenure varchar [not null]
+    status varchar [not null]
+    notes text
+}
+
+Table property_component {
+    id uuid [pk]
+    property_id uuid [not null, ref: > property.id]
+    building_element_id uuid [not null, ref: > building_element.id]
+    building_material_id uuid [ref: > building_material.id]
+}
+
+Table facility_type {
+    id uuid [pk]
+    code varchar [not null, unique]
+    name varchar [not null]
+}
+
+Table health_facility {
+    id uuid [pk]
+    community_id uuid [not null, unique, ref: - community.id]
+    property_id uuid [not null, unique, ref: - property.id]
+    facility_type_id uuid [not null, ref: > facility_type.id]
+    location geography(point, 4026) [not null]
+    is_headquarters boolean [not null]
+    is_active boolean [not null]
+}
+
+Table facility_picture {
+    id uuid [pk]
+    health_facility_id uuid [not null, ref: > health_facility.id]
+    filename varchar [not null, unique]
+}
+
+Table plan_type {
+    id uuid [pk]
+    code varchar [not null, unique]
+    name varchar [not null]
+    description text
+}
+
+Table facility_plan {
+    id uuid [pk]
+    health_facility_id uuid [not null, ref: > health_facility.id]
+    plan_type_id uuid [not null, ref: > plan_type.id]
+    filename varchar [not null, unique]
+    version smallint [not null]
+    indexes {
+        (health_facility_id, plan_type_id, version) [unique]
+    }
+}
+
+Table request {
+    id uuid [pk]
+    health_facility_id uuid [not null, ref: > health_facility.id]
+    requester_name varchar [not null]
+    requester_email varchar [not null]
+    requester_phone_number varchar
+    requester_official_position varchar
+    requester_functional_position varchar
+    rooms_to_expand smallint [not null]
+    notes text
+}
+
+Table request_log {
+    id uuid [pk]
+    user_account_id uuid [not null, ref: > user_account.id]
+    request_id uuid [not null, ref: > request.id]
+    description text
+}
+
+Table request_detail {
+    id uuid [pk]
+    request_id uuid [not null, ref: > request.id]
+    building_element_id uuid [not null, ref: > building_element.id]
+    building_material_id uuid [ref: > building_material.id]
+    required_action varchar [not null]
+}
+
+Table request_detail_evidence {
+    id uuid [pk]
+    request_detail_id uuid [not null, ref: > request_detail.id]
+    filename varchar [not null, unique]
+}
+
+Table request_comment {
+    id uuid [pk]
+    user_account_id uuid [not null, ref: > user_account.id]
+    request_id uuid [not null, ref: > request.id]
+    content text [not null]
+}
