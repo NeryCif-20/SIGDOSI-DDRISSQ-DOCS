@@ -6,6 +6,7 @@
 3. [Drivers Arquitectonicos](#3-drivers-arquitectonicos)
 4. [Matrices de Trazabilidad](#4-matrices-de-trazabilidad)
 5. [Historias de Usuario](#5-historias-de-usuario)
+6. [Diseño de Bases de Datos](#6-diseño-de-base-de-datos)
 
 ## 1. Core del Negocio
 
@@ -70,6 +71,7 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |**Prioridad**|Alta.|
 
 ### CDU400 - Gestionar Usuarios
+
 ![cdu-gestionar-usuarios](./assets/use-cases/user-management-uc.png)
 
 |**Id**|CDU400|
@@ -356,3 +358,13 @@ La Dirección Departamental de Redes Integradas de Servicios de Salud de Quezalt
 |- Criterios de Aceptación|- Cambiar estado.<br>- Confirmar operación.<br>- Registrar el cambio.|
 |Prioridad|Media|
 |Requisitos Relacionados|RF18, RF19|
+
+## 6. Base de Datos
+
+### Diseño Conceptual
+
+![diseño-conceptual](./assets/db/conceptual-design.png)
+
+### Diseño Lógico
+
+### Diseño Físico
