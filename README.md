@@ -7,6 +7,7 @@
 4. [Matrices de Trazabilidad](#4-matrices-de-trazabilidad)
 5. [Historias de Usuario](#5-historias-de-usuario)
 6. [Diseño de Bases de Datos](#6-diseño-de-base-de-datos)
+7. [Arquitectura del Sistema](#7-arquitectura-del-sistema)
 
 ## 1. Core del Negocio
 
@@ -656,3 +657,5 @@ CREATE TABLE request_detail_evidence (
 );
 
 ```
+
+## 7. Arquitectura del Sistema
