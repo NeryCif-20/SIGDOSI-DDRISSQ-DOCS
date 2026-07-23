@@ -219,7 +219,7 @@ CREATE TABLE request (
     rooms_to_expand SMALLINT NOT NULL,
     aproximate_cost NUMERIC(10, 2) NOT NULL,
     notes TEXT,
-    status VARCHAR(15) NOT NULL CHECK (status IN ('TO-DO', 'IN-PROGRESS', 'DONE'))
+    status VARCHAR(15) NOT NULL CHECK (status IN ('TO-DO', 'IN-PROGRESS', 'DONE')),
     created_at TIMESTAMP NOT NULL,
     updated_at TIMESTAMP NOT NULL,
     PRIMARY KEY (id),

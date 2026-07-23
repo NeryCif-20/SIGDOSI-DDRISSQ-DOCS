@@ -594,7 +594,7 @@ CREATE TABLE request (
     rooms_to_expand SMALLINT NOT NULL,
     aproximate_cost NUMERIC(10, 2) NOT NULL,
     notes TEXT,
-    status VARCHAR(15) NOT NULL CHECK (status IN ('TO-DO', 'IN-PROGRESS', 'DONE'))
+    status VARCHAR(15) NOT NULL CHECK (status IN ('TO-DO', 'IN-PROGRESS', 'DONE')),
     created_at TIMESTAMP NOT NULL,
     updated_at TIMESTAMP NOT NULL,
     PRIMARY KEY (id),
@@ -659,3 +659,18 @@ CREATE TABLE request_detail_evidence (
 ```
 
 ## 7. Arquitectura del Sistema
+
+### Diagrama de Paquetes
+
+![package-diagram](./assets/architecture/package-diagram.png)
+
+### Diagrama de Componentes
+
+![component-diagram](./assets/architecture/component-diagram.png)
+
+### Diagrama De Distribución
+
+![distribution-diagram](./assets/architecture/distruibution-diagram.png)
+
+### Diagrama de Despliegue
+![deployment-diagram](./assets/architecture/deployment-diagram.png)

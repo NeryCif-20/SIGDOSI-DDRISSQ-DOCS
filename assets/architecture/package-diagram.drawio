@@ -1,0 +1,341 @@
+<mxfile host="65bd71144e">
+    <diagram id="V61MofSnnYaPdoT0bkKK" name="package-diagram">
+        <mxGraphModel dx="744" dy="1363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" value="Application Layer" style="shape=folder;fontStyle=1;tabWidth=200;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="-120" width="1120" height="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Authentication" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="6" vertex="1">
+                    <mxGeometry x="20" y="60" width="200" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Controller" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="8" vertex="1">
+                    <mxGeometry x="15" y="60" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Service" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="8" vertex="1">
+                    <mxGeometry x="15" y="200" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Repository" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="8" vertex="1">
+                    <mxGeometry x="15" y="340" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="8" source="24" target="28" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-120" y="510" as="sourcePoint"/>
+                        <mxPoint x="40" y="510" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="65" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="8" source="23" target="24" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="153" y="330" as="sourcePoint"/>
+                        <mxPoint x="150" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="Healthcare Network" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="6" vertex="1">
+                    <mxGeometry x="240" y="60" width="200" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Controller" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="11" vertex="1">
+                    <mxGeometry x="15" y="60" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Service" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="11" vertex="1">
+                    <mxGeometry x="15" y="200" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="Repository" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="11" vertex="1">
+                    <mxGeometry x="15" y="340" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="11" source="29" target="31" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-67" y="190" as="sourcePoint"/>
+                        <mxPoint x="-70" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="67" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="11" source="31" target="32" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="153" y="190" as="sourcePoint"/>
+                        <mxPoint x="150" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="Infrastructure Management" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="6" vertex="1">
+                    <mxGeometry x="460" y="60" width="200" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="Controller" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="12" vertex="1">
+                    <mxGeometry x="15" y="60" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Service" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="12" vertex="1">
+                    <mxGeometry x="15" y="200" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="Repository" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="12" vertex="1">
+                    <mxGeometry x="15" y="340" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="12" source="33" target="36" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-67" y="330" as="sourcePoint"/>
+                        <mxPoint x="-70" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="69" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="12" source="36" target="39" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="153" y="190" as="sourcePoint"/>
+                        <mxPoint x="150" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="Structural Components" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="6" vertex="1">
+                    <mxGeometry x="680" y="60" width="200" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="Controller" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="13" vertex="1">
+                    <mxGeometry x="15" y="60" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Service" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="13" vertex="1">
+                    <mxGeometry x="15" y="200" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Repository" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="13" vertex="1">
+                    <mxGeometry x="15" y="340" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="13" source="34" target="37" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-57" y="200" as="sourcePoint"/>
+                        <mxPoint x="-60" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="71" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="13" source="37" target="40" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-47" y="210" as="sourcePoint"/>
+                        <mxPoint x="-50" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="Request Management" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="6" vertex="1">
+                    <mxGeometry x="900" y="60" width="200" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="Controller" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="14" vertex="1">
+                    <mxGeometry x="15" y="60" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Service" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="14" vertex="1">
+                    <mxGeometry x="15" y="200" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Repository" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="14" vertex="1">
+                    <mxGeometry x="15" y="340" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="14" source="35" target="38" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-257" y="220" as="sourcePoint"/>
+                        <mxPoint x="-260" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="73" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="14" source="38" target="41" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-247" y="230" as="sourcePoint"/>
+                        <mxPoint x="-250" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="Presentation Layer" style="shape=folder;fontStyle=1;tabWidth=200;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="-720" width="1340" height="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Authentication" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry x="20" y="60" width="200" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="Component" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="17" vertex="1">
+                    <mxGeometry x="15" y="60" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="Service" style="shape=folder;fontStyle=1;tabWidth=65;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="17" vertex="1">
+                    <mxGeometry x="15" y="200" width="135" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Interface" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="17" vertex="1">
+                    <mxGeometry x="15" y="340" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=100;entryDy=40;entryPerimeter=0;" parent="17" source="45" target="46" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-220" y="320" as="sourcePoint"/>
+                        <mxPoint x="-60" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="80" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;" parent="17" source="46" target="47" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="110" y="190" as="sourcePoint"/>
+                        <mxPoint x="125" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="81" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=170;entryDy=40;entryPerimeter=0;" parent="17" source="45" target="47" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="126" y="330" as="sourcePoint"/>
+                        <mxPoint x="150" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="Healthcare Network" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry x="240" y="60" width="200" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="Component" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="18" vertex="1">
+                    <mxGeometry x="15" y="60" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="Interface" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="18" vertex="1">
+                    <mxGeometry x="15" y="340" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="Service" style="shape=folder;fontStyle=1;tabWidth=65;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="18" vertex="1">
+                    <mxGeometry x="15" y="200" width="135" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=100;entryDy=40;entryPerimeter=0;" parent="18" source="48" target="75" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-110" y="190" as="sourcePoint"/>
+                        <mxPoint x="-95" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="83" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;" parent="18" source="75" target="58" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="110" y="190" as="sourcePoint"/>
+                        <mxPoint x="125" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="94" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=170;entryDy=40;entryPerimeter=0;" parent="18" source="48" target="58" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-67" y="190" as="sourcePoint"/>
+                        <mxPoint x="-25" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="Infrastructure Management" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry x="460" y="60" width="200" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="Component" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="19" vertex="1">
+                    <mxGeometry x="15" y="60" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="Interface" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="19" vertex="1">
+                    <mxGeometry x="15" y="340" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="Service" style="shape=folder;fontStyle=1;tabWidth=65;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="19" vertex="1">
+                    <mxGeometry x="15" y="200" width="135" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=100;entryDy=40;entryPerimeter=0;" parent="19" source="49" target="76" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-94" y="330" as="sourcePoint"/>
+                        <mxPoint x="-70" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="85" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;" parent="19" source="76" target="59" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="110" y="190" as="sourcePoint"/>
+                        <mxPoint x="125" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="95" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=170;entryDy=40;entryPerimeter=0;" parent="19" source="49" target="59" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-277" y="200" as="sourcePoint"/>
+                        <mxPoint x="-235" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="Structural Components" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry x="680" y="60" width="200" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Component" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="20" vertex="1">
+                    <mxGeometry x="15" y="60" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="Interface" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="20" vertex="1">
+                    <mxGeometry x="15" y="340" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="Service" style="shape=folder;fontStyle=1;tabWidth=65;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="20" vertex="1">
+                    <mxGeometry x="15" y="200" width="135" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=100;entryDy=40;entryPerimeter=0;" parent="20" source="50" target="77" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-110" y="190" as="sourcePoint"/>
+                        <mxPoint x="-95" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="87" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;" parent="20" source="77" target="60" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-100" y="200" as="sourcePoint"/>
+                        <mxPoint x="-85" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="96" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=170;entryDy=40;entryPerimeter=0;" parent="20" source="50" target="60" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-67" y="190" as="sourcePoint"/>
+                        <mxPoint x="-25" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="Request Management" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry x="900" y="60" width="200" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="Component" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="21" vertex="1">
+                    <mxGeometry x="15" y="60" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="Interface" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="21" vertex="1">
+                    <mxGeometry x="15" y="340" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="Service" style="shape=folder;fontStyle=1;tabWidth=65;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="21" vertex="1">
+                    <mxGeometry x="15" y="200" width="135" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=100;entryDy=40;entryPerimeter=0;" parent="21" source="51" target="78" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-94" y="330" as="sourcePoint"/>
+                        <mxPoint x="-70" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="89" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;" parent="21" source="78" target="61" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-84" y="340" as="sourcePoint"/>
+                        <mxPoint x="-60" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="97" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=170;entryDy=40;entryPerimeter=0;" parent="21" source="51" target="61" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-67" y="190" as="sourcePoint"/>
+                        <mxPoint x="-25" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="Shared" style="shape=folder;fontStyle=1;tabWidth=100;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="16" vertex="1">
+                    <mxGeometry x="1120" y="60" width="200" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="Component" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="22" vertex="1">
+                    <mxGeometry x="15" y="60" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="Interface" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="22" vertex="1">
+                    <mxGeometry x="15" y="340" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="Service" style="shape=folder;fontStyle=1;tabWidth=65;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="22" vertex="1">
+                    <mxGeometry x="15" y="200" width="135" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=100;entryDy=40;entryPerimeter=0;" parent="22" source="52" target="91" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-110" y="190" as="sourcePoint"/>
+                        <mxPoint x="-95" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=125;entryDy=40;entryPerimeter=0;" parent="22" source="91" target="62" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-100" y="200" as="sourcePoint"/>
+                        <mxPoint x="-85" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="98" value="&amp;lt;&amp;lt;import&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=170;entryDy=40;entryPerimeter=0;" parent="22" source="52" target="62" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-67" y="190" as="sourcePoint"/>
+                        <mxPoint x="-25" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=0;exitDx=0;exitDy=160;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=170;entryPerimeter=0;" parent="1" source="16" target="6" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="60" y="-110" as="sourcePoint"/>
+                        <mxPoint x="220" y="-110" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="120" y="-560"/>
+                            <mxPoint x="120" y="50"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="107" value="Integration Layer" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=40;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="1560" y="-210" width="210" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="tyW9o68AzULuLJjUTYmV-112" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=0;exitDx=1340;exitDy=300;exitPerimeter=0;entryX=0;entryY=0;entryDx=145;entryDy=40;entryPerimeter=0;" edge="1" parent="1" source="16" target="107">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="1433" y="-470" as="sourcePoint"/>
+                        <mxPoint x="1475" y="-270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="tyW9o68AzULuLJjUTYmV-113" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=0;exitDx=1120;exitDy=170;exitPerimeter=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6" target="107">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="1510" y="-410" as="sourcePoint"/>
+                        <mxPoint x="1715" y="-160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
