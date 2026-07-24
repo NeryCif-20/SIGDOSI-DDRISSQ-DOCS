@@ -668,7 +668,7 @@ CREATE TABLE request_detail_evidence (
 
 ![component-diagram](./assets/architecture/component-diagram.png)
 
-### Diagrama De Distribución
+### Diagrama de Distribución
 
 ![distribution-diagram](./assets/architecture/distruibution-diagram.png)
 
